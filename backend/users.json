@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "username": "demo",
+    "email": "demo@example.com",
+    "provider": "github",
+    "providerId": "12345",
+    "avatarUrl": "https://github.com/user.png",
+    "repositories": []
+  }
+]
