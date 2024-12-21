@@ -1,0 +1,23 @@
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.repository-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repository-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

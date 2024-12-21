@@ -1,0 +1,118 @@
+.sidebar {
+  width: 240px; /* Updated to match Figma */
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  border-right: 1px solid #E1E4E8;
+  padding: 32px 0; /* Updated padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  padding: 0 24px 32px; /* Updated padding */
+  border-bottom: 1px solid #E1E4E8;
+}
+
+.logo {
+  height: 32px;
+  margin-bottom: 32px; /* Updated spacing */
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Updated gap */
+  cursor: pointer;
+  padding: 8px 12px; /* Updated padding */
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.user-dropdown:hover {
+  background-color: #F6F8FA;
+}
+
+.sidebar-nav {
+  margin-top: 16px;
+  flex-grow: 1;
+  padding: 32px 12px; /* Updated padding */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px; /* Updated padding */
+  border-radius: 6px;
+  color: #1A1A1A;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  line-height: 20px;
+  margin-bottom: 4px; /* Added margin */
+}
+
+.sidebar-nav li:hover {
+  background-color: #F6F8FA;
+}
+
+.sidebar-nav li.active {
+  background-color: #F1F8FF;
+  color: #0066FF;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-footer {
+  padding: 0 12px;
+  margin-top: auto;
+  border-top: 1px solid #E1E4E8;
+  padding-top: 32px; /* Added padding */
+}
+
+.support-btn,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 12px; /* Updated padding */
+  border: none;
+  background: none;
+  border-radius: 6px;
+  color: #1A1A1A;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  line-height: 20px;
+  margin-bottom: 4px; /* Added margin */
+}
+
+.support-btn:hover,
+.logout-btn:hover {
+  background-color: #F6F8FA;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
